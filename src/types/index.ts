@@ -1,7 +1,6 @@
 //하단 탭 정보
 export type TabType = 'home' | 'history' | 'stats';
 
-
 // 카드사 정보
 export type CardCompany =
   | 'samsung'   // 삼성

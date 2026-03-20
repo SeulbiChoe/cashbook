@@ -10,9 +10,9 @@ const tabs = [
 ]
 function BottomNav ({activeTab, onChangeTab}:BottomNavProps) {
  return (
-  <div>
+  <div className="bottom-nav">
    {tabs.map((tab)=>(
-    <button onClick={()=>onChangeTab(tab.id)} className={activeTab === tab.id ? "active" : ""} key={tab.id}>{tab.icon}<span>{tab.label}</span></button>
+    <button onClick={()=>onChangeTab(tab.id)} className={`bottom-nav-item ${activeTab === tab.id ? "active" : ""}`} key={tab.id}>{tab.icon}<span>{tab.label}</span></button>
    ))}
   </div>
  )
